@@ -12,6 +12,23 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
     border-radius: 25px;
 }
 
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
 .title-fade-in {
     opacity: 100;
     animation-name: fade-in;
