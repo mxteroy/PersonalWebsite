@@ -27,7 +27,7 @@ class App extends Component{
                 <h1>Hello!</h1>
                 <p>My name is James Eroy</p>
                 <Title/>
-                <p>I'm always looking forward to working on meaningful projects</p>
+                <p>Find that passion and let it kill you. Let it take over your life.</p>
                 {/* {
                     !this.state.displayBio ? 
                     <div>
