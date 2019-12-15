@@ -97,7 +97,7 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
 }
 .bird-container {
     position: absolute;
-    top: 20%;
+    top: 2%;
     left: -7.5vw;
     -webkit-transform: scale(0);
     transform: scale(0);
