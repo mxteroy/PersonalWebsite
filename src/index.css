@@ -2,6 +2,7 @@ body {
     text-align: center;
     font-size: 20px;
     padding: 2.5%;
+    overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     background: rgb(94,7,44);
 background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145,49,49,0.14359247116815477) 48%, rgba(0,198,255,1) 100%);
@@ -83,22 +84,12 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
     -webkit-animation-delay: -0.75s;
     animation-delay: -0.75s;
 }
-.bird--three {
-    -webkit-animation-duration: 1.25s;
-    animation-duration: 1.25s;
-    -webkit-animation-delay: -0.25s;
-    animation-delay: -0.25s;
-}
-.bird--four {
-    -webkit-animation-duration: 1.1s;
-    animation-duration: 1.1s;
-    -webkit-animation-delay: -0.5s;
-    animation-delay: -0.5s;
-}
+
 .bird-container {
     position: absolute;
     top: 10%;
     left: -7.5vw;
+    max-width: 100%;
     -webkit-transform: scale(0);
     transform: scale(0);
     will-change: transform;
@@ -169,7 +160,7 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
  transform: translateY(0vh) scale(0.6);
 }
  100% {
- left: 100%;
+ left: 110%;
  opacity: 1;
  -webkit-transform: translateY(0vh) scale(0.6);
  transform: translateY(0vh) scale(0.6);
@@ -212,7 +203,7 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
  transform: translateY(0vh) scale(0.6);
 }
  100% {
- left: 100%;
+ left: 110%;
  opacity: 1;
  -webkit-transform: translateY(0vh) scale(0.6);
  transform: translateY(0vh) scale(0.6);
@@ -306,6 +297,7 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
 }
 
 #background-wrap {
+    overflow: hidden;
     bottom: 0;
 	left: 0;
 	padding-top: 0px;
