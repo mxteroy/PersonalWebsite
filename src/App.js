@@ -22,7 +22,7 @@ class App extends Component{
     render() {
 
         return (
-            <div>
+            <div className="container">
                 <div class="bird-container bird-container--one">
                     <div class="bird bird--one"></div>
                 </div>
