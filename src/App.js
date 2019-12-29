@@ -3,6 +3,8 @@ import Projects from './Projects';
 import SocialProfiles from './Socials';
 import profile from './assets/pofile.jpg';
 import Title from './Title';
+import './bird.css';
+import './clouds.css';
 
 class App extends Component{
     state = { displayBio: false };
