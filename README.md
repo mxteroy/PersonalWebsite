@@ -2,4 +2,4 @@
 
 <p>Landing page for website. Full portfolio in progress!</p>
 
-<h6>Created in React</h6>
+<h6>Created with React</h6>
