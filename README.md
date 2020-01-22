@@ -12,4 +12,4 @@
   </li>
 </ul>
 
-<h6>Created with React</h6>
+<h6>Created with ReactJS</h6>
