@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Projects from './Projects';
 import SocialProfiles from './Socials';
 import profile from './assets/pofile.jpg';
 import Title from './Title';
