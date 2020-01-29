@@ -1,4 +1,4 @@
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 769px) {
         
 
     @keyframes fade-out {
@@ -30,6 +30,7 @@
         animation-timing-function: steps(10);
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
+        z-index: 100;
     }
     .bird--one {
         -webkit-animation-duration: 1s;
