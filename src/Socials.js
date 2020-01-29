@@ -7,7 +7,7 @@ class SocialProfile extends Component {
 
         return (
             <div style={ {display: "inline-block", margin: 10, width: 50} }>
-                <a href={link} target="_blank"> 
+                <a href={link} target="_blank">
                     <img src={image} style={{height: 50}} className="hvr-grow"/>
                 </a>
             </div>
@@ -19,7 +19,6 @@ class SocialProfiles extends Component {
     render() {
         return (
             <div>
-                <h2>Let's Connect!</h2>
                 <div>
                     {
                         SOCIALS.map((SOCIAL) => {

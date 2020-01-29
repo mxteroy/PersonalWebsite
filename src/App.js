@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import SocialProfiles from './Socials';
-import profile from './assets/pofile.jpg';
+import profile from './assets/profile.jpg';
 import Title from './Title';
-import './bird.css';
-import './clouds.css';
+import './styles/bird.css';
+import './styles/clouds.css';
+import MyNavbar from './MyNavbar.js';
+import ProfilePictures from './ProfilePictures.js';
 
 class App extends Component{
-    state = { displayBio: false };
 
-    // constructor() {
-    //     super();
-    //     this.state = { displayBio: false };
-    //     console.log('component this', this);
+    constructor() {
+        super();
+        this.state = { displayBio: false };
+        console.log('component this', this);
 
-    //     this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-    // }
+        this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
+    }
 
     toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio });
@@ -24,37 +25,31 @@ class App extends Component{
 
         return (
             <div className="container">
-                <div class="bird-container bird-container--one">
-                    <div class="bird bird--one"></div>
+                <MyNavbar />
+                <div className="bird-container bird-container--one">
+                    <div className="bird bird--one"></div>
                 </div>
-                <div class="bird-container bird-container--two">
-                    <div class="bird bird--two"></div>
+                <div className="bird-container bird-container--two">
+                    <div className="bird bird--two"></div>
                 </div>
                 
 
                 <div id="background-wrap">
-                    <div class="x1">
-                        <div class="cloud"></div>
+                    <div className="x1">
+                        <div className="cloud"></div>
                     </div>
 
-                    <div class="x2">
-                        <div class="cloud"></div>
+                    <div className="x2">
+                        <div className="cloud"></div>
                     </div>
 
-                    <div class="x3">
-                        <div class="cloud"></div>
+                    <div className="x3">
+                        <div className="cloud"></div>
                     </div>
 
-                    {/* <div class="x4">
-                        <div class="cloud"></div>
-                    </div>
-
-                    <div class="x5">
-                        <div class="cloud"></div>
-                    </div> */}
                 </div>
                 
-                <img src={profile} className="profile" alt="profile"/>
+                <ProfilePictures/>
                 <h1>Hello!</h1>
                 <p>My name is James Eroy</p>
                 <Title/>
@@ -75,6 +70,7 @@ class App extends Component{
                 <Projects /> */}
                 <hr />
                 <SocialProfiles />
+                
             </div>
         )
     }

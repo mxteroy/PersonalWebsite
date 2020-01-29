@@ -1,11 +1,10 @@
 body {
     text-align: center;
     font-size: 20px;
-    padding: 2.5%;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     background: rgb(94,7,44);
-background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145,49,49,0.14359247116815477) 48%, rgba(0,198,255,1) 100%);
+    background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145,49,49,0.14359247116815477) 48%, rgba(0,198,255,1) 100%);
 }
 
 .profile {
@@ -33,11 +32,15 @@ background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145
 .title-fade-in {
     opacity: 100;
     animation-name: fade-in;
-    animation-duration: 2s;
+    -webkit-animation-name: fade-in;
+    -moz-animation-name: fade-in;
+    animation-duration: 4s;
 }
 
 .title-fade-out {
     opacity: 0;
     animation-name: fade-out;
-    animation-duration: 2s;
+    -webkit-animation-name: fade-out;
+    -moz-animation-name: fade-out;
+    animation-duration: 4s;
 }
