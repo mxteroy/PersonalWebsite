@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SocialProfiles from './Socials';
-import profile from './assets/profile.jpg';
 import Title from './Title';
 import './styles/bird.css';
 import './styles/clouds.css';
@@ -25,7 +24,7 @@ class App extends Component{
 
         return (
             <div className="container">
-                <MyNavbar />
+                <MyNavbar/>
                 <div className="bird-container bird-container--one">
                     <div className="bird bird--one"></div>
                 </div>
@@ -50,10 +49,11 @@ class App extends Component{
                 </div>
                 
                 <ProfilePictures/>
-                <h1>Hello!</h1>
+                <hr />
+                <p>Find that passion and let it kill you. Let it take over your life.</p>
+                <hr />
                 <p>My name is James Eroy</p>
                 <Title/>
-                <p>Find that passion and let it kill you. Let it take over your life.</p>
                 {/* {
                     !this.state.displayBio ? 
                     <div>
@@ -68,7 +68,7 @@ class App extends Component{
                 }
                 <hr />
                 <Projects /> */}
-                <hr />
+                
                 <SocialProfiles />
                 
             </div>
