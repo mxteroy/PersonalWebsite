@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import './styles/navbar.css';
 
+
 export default class MyNavbar extends React.Component{
   render() {
     return (

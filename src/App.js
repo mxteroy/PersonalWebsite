@@ -30,12 +30,8 @@ class App extends Component{
         return (
             <div className="container">
                 <BirdsAndClouds/>
+                <MyNavbar/>
                 <Router>
-                    <MyNavbar/>
-                    
-                    
-                    
-
                     <Switch>
                         <route path="/home">
                             <ProfilePictures/>
