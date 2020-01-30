@@ -5,6 +5,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     background: rgb(94,7,44);
     background: linear-gradient(90deg, rgba(94,7,44,0.4181022750897234) 0%, rgba(145,49,49,0.14359247116815477) 48%, rgba(0,198,255,1) 100%);
+
 }
 
 .profile {

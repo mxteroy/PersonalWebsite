@@ -1,28 +1,32 @@
-import project1 from '../assets/project1.png';
-import project2 from '../assets/project2.png';
-import project3 from '../assets/project3.png';
+import fireaul from '../assets/fireaul.png';
+import aggieSections from '../assets/favicon.ico';
+import bestDarnTacos from '../assets/tacos.jpg';
+import {FIREAULDESCRIPTIONS, AGGIESECTIONDESCRIPTIONS, BESTDARNTACODESCRIPTIONS} from './projectDescs.js';
 
 const PROJECTS = [
     {
         id: 1,
-        title: 'Example React Application',
-        description: 'A React App that I built, involving JS and core web dev concepts!',
-        link: 'https://github.com/15Dkatz/example',
-        image: project1
+        title: 'FireAUl',
+        summary: 'Assists Australians affected by the wildfires though crowdsourcing fire locations, emergency responders, and SOS alerts',
+        link: 'https://www.fireaul.online',
+        image: fireaul,
+        descriptions: FIREAULDESCRIPTIONS
     },
     {
         id: 2,
-        title: 'Example React Application 2',
-        description: 'Example 2',
-        link: 'https://github.com/15Dkatz/example',
-        image: project2
+        title: 'Aggie Sections',
+        summary: 'Notifies a user when a course section of their choosing becomes open',
+        link: 'https://www.aggiesections.com',
+        image: aggieSections,
+        descriptions: AGGIESECTIONDESCRIPTIONS
     },
     {
         id: 3,
-        title: 'Example React Application 3',
-        description: 'Example 3',
+        title: 'Best Darn Tacos',
+        summary: 'An application to output the best taco restaurants based on user inputs and past behaviors',
         link: 'https://github.com/15Dkatz/example',
-        image: project3
+        image: bestDarnTacos,
+        descriptions: BESTDARNTACODESCRIPTIONS
     }
 ];
 

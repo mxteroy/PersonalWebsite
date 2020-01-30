@@ -4,6 +4,11 @@ import Title from './Title';
 import MyNavbar from './MyNavbar.js';
 import ProfilePictures from './ProfilePictures.js';
 import BirdsAndClouds from './BirdsAndClouds.js';
+import Sections from './Sections.js';
+
+import PROJECTS from './data/projects';
+import EXPERIENCES from './data/experiences';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -33,13 +38,14 @@ class App extends Component{
                 <MyNavbar/>
                 <Router>
                     <Switch>
-                        <route path="/resume">
-                            <p> Resume</p>
-                        </route>
-                        <route path="/notes">
+                        <Route path="/resume">
+                            <Sections section="Experiences" contents={EXPERIENCES}/>
+                            <Sections section="Most Recent Projects" contents={PROJECTS}/>
+                        </Route>
+                        <Route path="/notes">
                             <p> Notes</p>
-                        </route>
-                        <route path="/">
+                        </Route>
+                        <Route path="/">
                             <ProfilePictures/>
                             <hr />
                             <p>Find that passion and let it kill you. Let it take over your life.</p>
@@ -47,7 +53,7 @@ class App extends Component{
                             <p>My name is James Eroy</p>
                             <Title/>                
                             <SocialProfiles />
-                        </route>
+                        </Route>
                     </Switch>
                 </Router>
             </div>
