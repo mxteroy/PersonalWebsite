@@ -33,7 +33,7 @@ class App extends Component{
                 <MyNavbar/>
                 <Router>
                     <Switch>
-                        <route path="/">
+                        <Route path="/home">
                             <ProfilePictures/>
                             <hr />
                             <p>Find that passion and let it kill you. Let it take over your life.</p>
@@ -41,13 +41,13 @@ class App extends Component{
                             <p>My name is James Eroy</p>
                             <Title/>                
                             <SocialProfiles />
-                        </route>
-                        <route path="/resume">
+                        </Route>
+                        <Route path="/resume">
                             <p> Resume</p>
-                        </route>
-                        <route path="/notes">
+                        </Route>
+                        <Route path="/notes">
                             <p> Notes</p>
-                        </route>
+                        </Route>
                     </Switch>
                 </Router>
             </div>
