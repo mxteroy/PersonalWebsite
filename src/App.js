@@ -33,7 +33,7 @@ class App extends Component{
                 <MyNavbar/>
                 <Router>
                     <Switch>
-                        <route path="/home">
+                        <route path="/">
                             <ProfilePictures/>
                             <hr />
                             <p>Find that passion and let it kill you. Let it take over your life.</p>
