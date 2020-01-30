@@ -48,10 +48,11 @@ class App extends Component{
                         <Route path="/">
                             <ProfilePictures/>
                             <hr />
-                            <p>Find that passion and let it kill you. Let it take over your life.</p>
+                            <p><strong>Find that passion and let it kill you. Let it take over your life.</strong></p>
                             <hr />
-                            <p>My name is James Eroy</p>
-                            <Title/>                
+                            <p>Howdy! My name is James Maxell Eroy</p>
+                            <p>Computer Science at Texas A&M University - College Station</p>
+                            <hr />         
                             <SocialProfiles />
                         </Route>
                     </Switch>

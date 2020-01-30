@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FACEBOOK = [
-    <p>Software engineer intern for Summer 2020</p>
+    <p>Software Engineer Intern for Summer 2020</p>
 ]
 
 const INFORMATIONINNOVATIONLAB = [

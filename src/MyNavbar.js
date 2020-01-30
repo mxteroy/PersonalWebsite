@@ -13,9 +13,9 @@ export default class MyNavbar extends React.Component{
         <Nav.Item as="li">
           <Nav.Link id="nav-link" href="/resume">Resume</Nav.Link>
         </Nav.Item>
-        <Nav.Item as="li">
+        {/* <Nav.Item as="li">
           <Nav.Link id="nav-link" href="/notes">Notes</Nav.Link>
-        </Nav.Item>
+        </Nav.Item> */}
       </Nav>
     );
   }

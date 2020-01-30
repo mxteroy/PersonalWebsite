@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
     },
     heading: {
-      fontSize: theme.typography.pxToRem(15),
+      fontSize: theme.typography.pxToRem(16),
       flexBasis: '33.33%',
       flexShrink: 0,
     },
@@ -28,26 +28,26 @@ const Section =props=> {
         const [expanded, setExpanded] = React.useState(false);
 
         const handleChange = panel => (event, isExpanded) => {
-            setExpanded(isExpanded ? panel : false);
+            setExpanded(isExpanded ?  false: panel);
         };
 
         const  { id, title, image, summary, link, descriptions } = props.content;
 
         return (
-            <ExpansionPanel defaultExpanded={true} expanded={expanded === ('panel' + id)} onChange={handleChange('panel' + id)}>
+            <ExpansionPanel defaultExpanded={true} expanded={expanded !== ('panel' + id)} onChange={handleChange('panel' + id)}>
             <ExpansionPanelSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
             >
-                <img src={image} style={{ width: 30, height: 30, marginRight: 20}} alt={title}/>
+                <img src={image} style={{ width: 40, height: 40, marginRight: 20}} alt={title}/>
 
-                <Typography className={classes.heading} >{title}</Typography>
+                <Typography className={classes.heading} ><strong >{title}</strong></Typography>
                 
-                <Typography style={{display: (expanded || window.screen.width < 769 ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
+                <Typography style={{display: (!expanded || window.screen.width < 769 ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
 
             </ExpansionPanelSummary>
-                <Typography style={{display: (!expanded ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
+                <Typography style={{display: (expanded ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
 
             {/* <a href={link}>{link}</a> */}
             <ExpansionPanelDetails>
