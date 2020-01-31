@@ -10,7 +10,8 @@ const PROJECTS = [
         summary: 'Assists Australians affected by the wildfires though crowdsourcing fire locations, emergency responders, and SOS alerts',
         link: 'https://www.fireaul.online',
         image: fireaul,
-        descriptions: FIREAULDESCRIPTIONS
+        descriptions: FIREAULDESCRIPTIONS,
+        date: "Winter 2020"
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ const PROJECTS = [
         summary: 'Notifies a user when a course section of their choosing becomes open',
         link: 'https://www.aggiesections.com',
         image: aggieSections,
-        descriptions: AGGIESECTIONDESCRIPTIONS
+        descriptions: AGGIESECTIONDESCRIPTIONS,
+        date: "Winter 2020"
     },
     {
         id: 3,
@@ -26,7 +28,8 @@ const PROJECTS = [
         summary: 'An application to output the best taco restaurants based on user inputs and past behaviors',
         link: 'https://github.com/15Dkatz/example',
         image: bestDarnTacos,
-        descriptions: BESTDARNTACODESCRIPTIONS
+        descriptions: BESTDARNTACODESCRIPTIONS,
+        date: "Fall 2019"
     }
 ];
 

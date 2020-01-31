@@ -2,7 +2,7 @@ import React from 'react';
 
 const FIREAULDESCRIPTIONS = [
 <p>Developed front-end using <strong>ReactJS</strong> that is hosted using Firebase while utilizing the <strong>Realtime Database</strong></p>,
-<p><strong>Built back-end API</strong> with a <strong>Flask server</strong> (for querying and <strong>asynchronous listening</strong> for data entries and delivering emergency alerts through the <strong>Twilio API</strong>) hosted on an <strong>AWS EC2 instance</strong></p>,
+<p><strong>Built back-end API</strong> with a <strong>Flask server</strong> (to query and <strong>asynchronously listen</strong> for data entries and delivering emergency alerts through the <strong>Twilio API</strong>) hosted on an <strong>AWS EC2 instance</strong></p>,
 <p>Integrated <strong>Google Cloud Platform’s Cloud Vision API</strong> for categorization and image classification and <strong>Maps API</strong> for marking fires</p>
 ]
 

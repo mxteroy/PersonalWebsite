@@ -5,6 +5,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Alert from '@material-ui/lab/Alert';
 import Descriptions from './Descriptions.js';
 
 
@@ -16,6 +17,12 @@ const useStyles = makeStyles(theme => ({
       fontSize: theme.typography.pxToRem(16),
       flexBasis: '33.33%',
       flexShrink: 0,
+    },
+    date: {
+        fontSize: theme.typography.pxToRem(15),
+        color: theme.palette.text.secondary,
+        flexBasis: '33.33%',
+        textAlign: "right"
     },
     secondaryHeading: {
       fontSize: theme.typography.pxToRem(15),
@@ -31,7 +38,7 @@ const Section =props=> {
             setExpanded(isExpanded ?  false: panel);
         };
 
-        const  { id, title, image, summary, link, descriptions } = props.content;
+        const  { id, title, image, summary, link, descriptions, date } = props.content;
 
         return (
             <ExpansionPanel defaultExpanded={true} expanded={expanded !== ('panel' + id)} onChange={handleChange('panel' + id)}>
@@ -44,7 +51,9 @@ const Section =props=> {
 
                 <Typography className={classes.heading} ><strong >{title}</strong></Typography>
                 
-                <Typography style={{display: (!expanded || window.screen.width < 769 ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
+        <Typography style={{display: (!expanded || window.screen.width < 769 ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>
+            {summary}
+        </Typography>
 
             </ExpansionPanelSummary>
                 <Typography style={{display: (expanded ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
@@ -52,13 +61,13 @@ const Section =props=> {
             {/* <a href={link}>{link}</a> */}
             <ExpansionPanelDetails>
 
-                <Typography>
                 
-                </Typography>
 
                 <Descriptions descriptions={descriptions} parentid={props.id}/>
                 
+
             </ExpansionPanelDetails>
+            
             </ExpansionPanel>
         )
 }
