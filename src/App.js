@@ -42,8 +42,8 @@ class App extends Component{
                 <Router>
                     <Switch>
                         <Route path="/resume">
-                            <Sections section="Experiences" contents={EXPERIENCES}/>
-                            <Sections section="Most Recent Projects" contents={PROJECTS}/>
+                            <Sections section="experiences" contents={EXPERIENCES}/>
+                            <Sections section="recent projects" contents={PROJECTS}/>
                         </Route>
                         <Route path="/notes">
                             <p> Notes</p>
@@ -55,11 +55,11 @@ class App extends Component{
                             <hr />
                             <p>Howdy! My name is James Maxell Eroy</p>
                             <p>Computer Science at Texas A&M University - College Station</p>
-                            <hr />         
-                            <SocialProfiles />
+                            <hr />
                         </Route>
                     </Switch>
                 </Router>
+                <SocialProfiles />
             </div>
         )
     }

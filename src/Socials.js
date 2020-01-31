@@ -7,7 +7,7 @@ class SocialProfile extends Component {
 
         return (
             <div style={ {display: "inline-block", margin: 10, width: 50} }>
-                <a href={link} target="_blank" alt={link}>
+                <a className="hvr-grow" href={link} target="_blank" alt={link}>
                     {image}
                 </a>
             </div>
