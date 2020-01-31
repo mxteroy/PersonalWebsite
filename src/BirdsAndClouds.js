@@ -6,12 +6,12 @@ class BirdsAndClouds extends Component {
     render() {
         return (
             <div>
-                 <div className="bird-container bird-container--one">
+                 {/* <div className="bird-container bird-container--one">
                 <div className="bird bird--one"></div>
             </div>
             <div className="bird-container bird-container--two">
                 <div className="bird bird--two"></div>
-            </div>
+            </div> */}
                     
 
             <div id="background-wrap">

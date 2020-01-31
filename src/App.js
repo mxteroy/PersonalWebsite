@@ -5,9 +5,11 @@ import MyNavbar from './MyNavbar.js';
 import ProfilePictures from './ProfilePictures.js';
 import BirdsAndClouds from './BirdsAndClouds.js';
 import Sections from './Sections.js';
+import TypingText from './TypingText.js';
 
 import PROJECTS from './data/projects';
 import EXPERIENCES from './data/experiences';
+import QUOTES from './data/quotes.js';
 
 import {
     BrowserRouter as Router,
@@ -15,6 +17,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
+
 
 class App extends Component{
 
@@ -48,7 +51,7 @@ class App extends Component{
                         <Route path="/">
                             <ProfilePictures/>
                             <hr />
-                            <p><strong>Find that passion and let it kill you. Let it take over your life.</strong></p>
+                            <strong><TypingText texts={QUOTES} /></strong>
                             <hr />
                             <p>Howdy! My name is James Maxell Eroy</p>
                             <p>Computer Science at Texas A&M University - College Station</p>

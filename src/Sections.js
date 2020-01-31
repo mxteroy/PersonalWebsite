@@ -8,7 +8,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Alert from '@material-ui/lab/Alert';
 import Descriptions from './Descriptions.js';
 
-
 const useStyles = makeStyles(theme => ({
     root: {
       width: '100%',
