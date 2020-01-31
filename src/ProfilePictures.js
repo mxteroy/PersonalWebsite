@@ -10,30 +10,33 @@ const PROFILEPICTURES = [
 ];
 
 class ProfilePictures extends Component {
-    state = { pictureIndex: 0};
+    state = { pictureIndex: 0, fadeIn: true};
 
     componentDidMount () {
+        this.timeout = setTimeout(() => this.setState({ fadeIn: false}), 4000);
         this.animateTitles();
     }
 
     componentWillUnmount () {
         clearInterval(this.titleInterval);
+        clearTimeout(this.timeout);
     }
 
     animateTitles = () => {
         this.titleInterval = setInterval(() => {
             const pictureIndex = (this.state.pictureIndex + 1) % PROFILEPICTURES.length;
 
-            this.setState({ pictureIndex});
-        }, 10000);
+            this.setState({ pictureIndex,  fadeIn: true });
+            setTimeout(() => this.setState({ fadeIn: false}), 4000);
+        }, 8000);
     }
 
     render() {
-        const {pictureIndex} = this.state;
+        const {fadeIn, pictureIndex} = this.state;
         const profilePicture = PROFILEPICTURES[pictureIndex];
 
         return (
-            <img className="w3-animate-fading profile" src={profilePicture} alt="profile"/>
+            <img className={(fadeIn ? 'fade-in' : 'fade-out') + " profile"} src={profilePicture} alt="profile"/>
         )
     }
 }
