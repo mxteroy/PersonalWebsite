@@ -6,7 +6,7 @@ import profile3 from './assets/profile3.jpg';
 import profile4 from './assets/profile4.jpg';
 
 const PROFILEPICTURES = [
-    profile1, profile2, profile3, profile4, profile
+    profile4, profile2, profile1
 ];
 
 class ProfilePictures extends Component {
