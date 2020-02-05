@@ -16,7 +16,7 @@ const CHARLESSCHWAB = [
 ]
 
 const ANTHROPOLOGY = [
-    <p><strong>Developed a full-stack web application</strong> using the <strong>Flask</strong> framework that connects anthropologists around the world</p>,
+    <p>Developed a <strong>full-stack web application</strong> using the <strong>Flask</strong> framework that connects anthropologists around the world</p>,
     <p>Implemented a forum for shipwreck discussion and scraped big data for manipulation and displayed on a UI</p>
 ]
 
