@@ -6,15 +6,15 @@ import tamuanth from '../assets/tamuanth.png';
 import {FACEBOOK, INFORMATIONINNOVATIONLAB, CHARLESSCHWAB, ANTHROPOLOGY} from './experienceDescs.js';
 
 const EXPERIENCES = [
-    {
-        id: 1,
-        title: 'Facebook',
-        summary: <span><strong>Software Engineer Intern</strong> in Menlo Park, California</span>,
-        link: 'https://www.fireaul.online',
-        image: facebook,
-        descriptions: FACEBOOK,
-        date: "Summer 2020"
-    },
+    //{
+    //     id: 1,
+    //     title: 'Facebook',
+    //     summary: <span><strong>Software Engineer Intern</strong> in Menlo Park, California</span>,
+    //     link: 'https://www.fireaul.online',
+    //     image: facebook,
+    //     descriptions: FACEBOOK,
+    //     date: "Summer 2020"
+    // },
     {
         id: 2,
         title: 'Information Innovation Lab',
