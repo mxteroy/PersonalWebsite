@@ -7,7 +7,7 @@ const PROJECTS = [
     {
         id: 1,
         title: 'FireAUl.online',
-        summary: 'Assists Australians affected by the wildfires though crowdsourcing fire locations, emergency responders, and SOS alerts',
+        summary: 'Assists Australians affected by the wildfires through crowdsourcing fire locations, emergency responders, and SOS alerts',
         link: 'https://www.fireaul.online',
         image: fireaul,
         descriptions: FIREAULDESCRIPTIONS,
