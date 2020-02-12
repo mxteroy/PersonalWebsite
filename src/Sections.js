@@ -34,13 +34,13 @@ const Section =props=> {
         const [expanded, setExpanded] = React.useState(false);
 
         const handleChange = panel => (event, isExpanded) => {
-            setExpanded(isExpanded ?  false: panel);
+            setExpanded(!isExpanded ? false: panel);
         };
 
         const  { id, title, image, summary, link, descriptions, date } = props.content;
 
         return (
-            <ExpansionPanel defaultExpanded={true} expanded={expanded !== ('panel' + id)} onChange={handleChange('panel' + id)}>
+            <ExpansionPanel defaultExpanded={false} expanded={expanded === ('panel' + id)} onChange={handleChange('panel' + id)}>
             <ExpansionPanelSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1bh-content"
@@ -50,22 +50,21 @@ const Section =props=> {
 
                 <Typography className={classes.heading} ><strong >{title}</strong></Typography>
                 
-        <Typography style={{display: (!expanded || window.screen.width < 769 ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>
-            {summary}
-        </Typography>
+                <Typography style={{display: (expanded || window.screen.width < 769 ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>
+                    {summary}
+                </Typography>
 
-            </ExpansionPanelSummary>
-                <Typography style={{display: (expanded ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>{summary}</Typography>
+                </ExpansionPanelSummary>
+                    <Typography style={{display: (!expanded ? "none" : "block")}} id="expansion-description-mobile" className={classes.secondaryHeading}>
+                        {summary}
+                    </Typography>
 
-            {/* <a href={link}>{link}</a> */}
-            <ExpansionPanelDetails>
+                {/* <a href={link}>{link}</a> */}
+                <ExpansionPanelDetails>
 
-                
+                    <Descriptions descriptions={descriptions} parentid={props.id}/>
 
-                <Descriptions descriptions={descriptions} parentid={props.id}/>
-                
-
-            </ExpansionPanelDetails>
+                </ExpansionPanelDetails>
             
             </ExpansionPanel>
         )
