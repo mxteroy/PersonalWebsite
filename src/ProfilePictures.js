@@ -4,9 +4,10 @@ import profile1 from './assets/profile1.jpg';
 import profile2 from './assets/profile2.jpg';
 import profile3 from './assets/profile3.jpg';
 import profile4 from './assets/profile4.jpg';
+import profile6 from './assets/profile4.jpg';
 
 const PROFILEPICTURES = [
-    profile4, profile2, profile1
+    profile6
 ];
 
 class ProfilePictures extends Component {
@@ -36,7 +37,8 @@ class ProfilePictures extends Component {
         const profilePicture = PROFILEPICTURES[pictureIndex];
 
         return (
-            <img className={(fadeIn ? 'fade-in' : 'fade-out') + " profile"} src={profilePicture} alt="profile"/>
+            // <img className={(fadeIn ? 'fade-in' : 'fade-out') + " profile"} src={profilePicture} alt="profile"/>
+            <img src={profilePicture} alt="profile" />
         )
     }
 }
