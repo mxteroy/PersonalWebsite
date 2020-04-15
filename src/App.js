@@ -49,7 +49,7 @@ class App extends Component{
                             <p> Notes</p>
                         </Route>
                         <Route path="/">
-                            <ProfilePictures/>
+                            {/* <ProfilePictures/> */}
                             <hr />
                             <strong><TypingText texts={QUOTES} /></strong>
                             <hr />
