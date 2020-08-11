@@ -5,9 +5,9 @@ import profile2 from './assets/profile2.jpg';
 import profile3 from './assets/profile3.jpg';
 import profile4 from './assets/profile4.jpg';
 import profile6 from './assets/profile6.jpg';
-
+import bitmoji from './assets/bitmojicomp.JPG';
 const PROFILEPICTURES = [
-    profile6
+    bitmoji
 ];
 
 class ProfilePictures extends Component {

@@ -1,12 +1,13 @@
 import React from 'react';
 
 const FACEBOOK = [
-    <p>Software Engineer Intern for Summer 2020</p>
+    <p>Software Engineer Intern for Fall 2020</p>
 ]
 
-const INFORMATIONINNOVATIONLAB = [
-    <p>Developed real-time models, preparing data, testing and training neural networks for the purpose of hand detection and hand gesture recognition using deep learning</p>,
-    <p>Utilized <strong>Keras</strong> to train the neural networks for image processing</p>
+const PANW = [
+    <p>Implemented log generation for an internal Cortex Data Lake testing tool that reduces test times by up to 30%</p>,
+    <p>Created Python script that parses schema files for automatic generation of C header files</p>,
+    <p>Redesigned and developed modern UI in for an internal Cortex Data Lake diagnostic tool</p>
 ]
 
 const CHARLESSCHWAB = [
@@ -21,4 +22,4 @@ const ANTHROPOLOGY = [
 ]
 
 
-export {FACEBOOK, INFORMATIONINNOVATIONLAB, CHARLESSCHWAB, ANTHROPOLOGY};
+export {FACEBOOK, PANW, CHARLESSCHWAB, ANTHROPOLOGY};

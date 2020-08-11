@@ -49,12 +49,14 @@ class App extends Component{
                             <p> Notes</p>
                         </Route>
                         <Route path="/">
-                            {/* <ProfilePictures/> */}
+                            <ProfilePictures/>
                             <hr />
                             <strong><TypingText texts={QUOTES} /></strong>
                             <hr />
                             <p>Howdy! My name is James Maxell Eroy</p>
-                            <p>Computer Science at Texas A&M University - College Station</p>
+                            <p>Interdisciplinary Studies at University of Texas at Dallas</p>
+                            <p>Foundations in Computer Science and Entrepreneurship</p>
+                            <p>Concentration in Business Communication</p>
                             <hr />
                         </Route>
                     </Switch>
