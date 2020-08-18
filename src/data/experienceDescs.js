@@ -5,7 +5,7 @@ const FACEBOOK = [
 ]
 
 const PANW = [
-    <p>Implemented log generation for an internal Cortex Data Lake testing tool that reduces test times by up to 30%</p>,
+    <p>Implemented log generation for an internal Cortex Data Lake testing tool that reduces test times by 100%</p>,
     <p>Created Python script that parses schema files for automatic generation of C header files</p>,
     <p>Redesigned and developed modern UI in for an internal Cortex Data Lake diagnostic tool</p>
 ]
