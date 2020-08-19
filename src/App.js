@@ -55,8 +55,8 @@ class App extends Component{
                             <hr />
                             <p>Howdy! My name is James Maxell Eroy</p>
                             <p>Interdisciplinary Studies at University of Texas at Dallas</p>
-                            <p>Concentration in Computer Engineering</p>
-                            <p>Foundations in Math and Economics</p>
+                            <p>Foundations in Math and Computer Science</p>
+                            <p>Concentration in Economics</p>
                             <hr />
                         </Route>
                     </Switch>
