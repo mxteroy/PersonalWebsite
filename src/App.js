@@ -54,9 +54,7 @@ class App extends Component{
                             <strong><TypingText texts={QUOTES} /></strong>
                             <hr />
                             <p>Howdy! My name is James Maxell Eroy</p>
-                            <p>Interdisciplinary Studies at University of Texas at Dallas</p>
-                            <p>Foundations in Math and Computer Science</p>
-                            <p>Concentration in Economics</p>
+                            <p>Computer Science, Math, and Economics at University of Texas at Dallas</p>
                             <hr />
                         </Route>
                     </Switch>
