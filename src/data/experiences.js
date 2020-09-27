@@ -28,7 +28,7 @@ const EXPERIENCES = [
     {
         id: 3,
         title: 'Charles Schwab Co.',
-        summary: <span><strong>Software Engineer Intern</strong> in Austin, Texas</span>,
+        summary: <span><strong>Frontend Developer Intern</strong> in Austin, Texas</span>,
         link: '',
         image: schwab,
         descriptions: CHARLESSCHWAB,
