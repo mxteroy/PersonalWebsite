@@ -14,7 +14,7 @@ const EXPERIENCES = [
         link: '',
         image: facebook,
         descriptions: FACEBOOK,
-        date: "Fall 2020"
+        date: "Aug. 2020 - Present"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const EXPERIENCES = [
         link: '',
         image: panw,
         descriptions: PANW,
-        date: "Summer 2020"
+        date: "May 2020 - Aug. 2020"
     },
     {
         id: 3,
@@ -32,16 +32,16 @@ const EXPERIENCES = [
         link: '',
         image: schwab,
         descriptions: CHARLESSCHWAB,
-        date: "Summer 2019"
+        date: "Jun. 2019 - Aug. 2019"
     },
     {
         id: 4,
-        title: 'TAMU Anthropology',
-        summary: <span><strong>Undergraduate Researcher</strong> in College Station, Texas</span>,
+        title: 'TAMU Anthro - Nautical Archaeology Digital Library',
+        summary: <span><strong>Undergraduate Research Assistant</strong> in College Station, Texas</span>,
         link: '',
         image: tamuanth,
         descriptions: ANTHROPOLOGY,
-        date: "Fall 2018 - Summer 2019"
+        date: "Oct. 2018 - Aug. 2019"
     }
 ];
 
