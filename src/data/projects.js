@@ -6,7 +6,7 @@ import {FIREAULDESCRIPTIONS, AGGIESECTIONDESCRIPTIONS, BESTDARNTACODESCRIPTIONS}
 const PROJECTS = [
     {
         id: 1,
-        title: 'FireAUl.online (domain deprecated)',
+        title: 'FireAUl',
         summary: 'Assists Australians affected by the wildfires through crowdsourcing fire locations, emergency responders, and SOS alerts',
         link: 'https://www.fireaul.online',
         image: fireaul,
@@ -15,7 +15,7 @@ const PROJECTS = [
     },
     {
         id: 2,
-        title: 'AggieSections.com',
+        title: 'AggieSections',
         summary: 'Notifies a user when a course section of their choosing becomes open',
         link: 'https://www.aggiesections.com',
         image: aggieSections,

@@ -36,7 +36,7 @@ const EXPERIENCES = [
     },
     {
         id: 4,
-        title: 'TAMU Anthro - Nautical Archaeology Digital Library',
+        title: 'Nautical Archaeology Digital Library',
         summary: <span><strong>Undergraduate Research Assistant</strong> in College Station, Texas</span>,
         link: '',
         image: tamuanth,
