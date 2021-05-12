@@ -46,10 +46,7 @@ class App extends Component {
               {/* <strong><TypingText texts={QUOTES} /></strong>
               <hr /> */}
               <p>Howdy! My name is James Maxell Eroy</p>
-              <p>
-                Computer Science, Math, and Economics at University of Texas at
-                Dallas
-              </p>
+              <p>Student at University of Texas at Dallas</p>
               <hr />
             </Route>
           </Switch>
